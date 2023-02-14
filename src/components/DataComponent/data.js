@@ -1,38 +1,17 @@
 export const stockData = [
     {
-      company: "Twitter Inc",
-      ticker: "TWTR",
-      stockPrice: "22.76 USD",
-      timeElapsed: "5 sec ago",
+      learning: "Cómo clavar un clavo",
+      description: "Técnicas para clavar un clavo.",
+      time: "5 min.",
     },
     {
-      company: "Square Inc",
-      ticker: "SQ",
-      stockPrice: "45.28 USD",
-      timeElapsed: "10 sec ago",
+      learning: "Cómo copiar un archivo en el explorador",
+      description: "Lo básico de cómo copiar un archivo en el explorador de windows",
+      time: "7 min.",
     },
     {
-      company: "Shopify Inc",
-      ticker: "SHOP",
-      stockPrice: "341.79 USD",
-      timeElapsed: "3 sec ago",
-    },
-    {
-      company: "Sunrun Inc",
-      ticker: "RUN",
-      stockPrice: "9.87 USD",
-      timeElapsed: "4 sec ago",
-    },
-    {
-      company: "Adobe Inc",
-      ticker: "ADBE",
-      stockPrice: "300.99 USD",
-      timeElapsed: "10 sec ago",
-    },
-    {
-      company: "HubSpot Inc",
-      ticker: "HUBS",
-      stockPrice: "115.22 USD",
-      timeElapsed: "12 sec ago",
+      learning: "Cómo crear un twitter",
+      description: "Ló básico de como generar un twitter",
+      time: "3 min.",
     },
   ];
