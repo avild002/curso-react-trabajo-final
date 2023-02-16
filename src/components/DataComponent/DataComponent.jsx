@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { stockData } from "./data";
 import s from "./style.module.css";
 
@@ -9,16 +9,20 @@ const showData =()=>{
 
 const DataComponent = () => {
 
+  const [hidden, setHidden] = useState(true);
+
   return (
     <>
       <div className={s.container}>
-        <button onClick={showData}>Mostrar data</button>
+        <button onClick={() => setHidden(s => !s)}>Mostrar data</button>
       </div>
-      <div className={s.container}>
+      {!hidden ? 
+      <div>
         {stockData.map((data, key) => {
           return (
-            <div key={key}>
+            <div key={key}>           
               <table className={s.table}>
+              <tbody>
                 <tr>
                   <td>{data.learning}</td> 
                 </tr>
@@ -28,11 +32,12 @@ const DataComponent = () => {
                 <tr>
                   <td>{data.time}</td>
                 </tr>
+                </tbody>
               </table>
             </div>
           );
         })}
-      </div>
+      </div>: null}
     </>
   );
 };
