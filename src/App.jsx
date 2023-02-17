@@ -1,7 +1,7 @@
 import { useState } from 'react' //gestor de estados
 import DisplayDifficulty from './components/DisplayDifficulty/DisplayDifficulty';
 import MenuList from './components/MenuList/MenuList';
-import DataComponent from './components/DataComponent/DataComponent';
+import NewComponent from './components/NewComponent/NewComponent';
 import s from "./style.module.css";
 
 function App() {
@@ -11,6 +11,12 @@ function App() {
   const onMenuListItemClick = (difficulty) => {
     setCurrentDifficulty(difficulty)
   }
+
+  const [todos, setTodos] = useState([]);
+
+  const addTodo = () => {
+    setTodos((t) => [...t, "New Todo"]);
+  };
 
   //JXS es una mezcla entre XML + JS
   //Se inyecta componentes MenuList y DisplayDifficulty
@@ -27,7 +33,7 @@ function App() {
         </div>
       </div>
       <div className={s.workspace}>
-        <DataComponent/>
+        <NewComponent todos={todos} addTodo={addTodo}/>
       </div>
     </>
   )

@@ -1,7 +1,7 @@
-export const stockData = [
+export const learnings = [
     {
       learning: "Cómo clavar un clavo",
-      description: "Técnicas para clavar un clavo.",
+      description: "Técnicas para clavar un clavo",
       time: "5 min.",
     },
     {
